@@ -16,7 +16,6 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     Future.microtask(() async {
       context.read<ApiProvider>().loadAlbum();
-      print("mulai ${context.read<ApiProvider>().loadEnum}");
     });
     super.initState();
   }
